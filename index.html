@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header class="logo">
+        <img src="/imagenes/Vector.png" alt="Logo de alura con la inicial de letra a">
+    </header>
+    <main class="container">
+        <section class="texto">
+            <textarea class="input-texto" cols="40" rows="6" placeholder="Ingrese texto aqui"class="texto-desaparece"></textarea>
+            <div id="div-desaparece">
+                <div class="info">
+                   <span>
+                     <img src="./imagenes/signo de exclamación.png" alt="">Solo letras minúsculas y sin acentos.
+                  </span>
+                </div>
+            </div>
+            <div class="botones">
+                <button class="encriptar" onclick="btnEncriptar()">
+                    Encriptar
+                </button>
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+         
+        <section class="mensaje-box">
+            <div id="contenedor">
+                <textarea class="mensaje" cols="18" rows="8"></textarea>
+                <div class="busqueda">
+                    <h4>Texto encriptado y desencriptado</h4>
+                </div>
+                
+
+            </div>
+           <div>
+            <button class="copiar" onclick="copiar()">Copiar</button> 
+           </div>
+            
+        </section>
+        
+        
+    </main>
+     
+    <footer>
+        <p class="copyright">&copy Copyright Nancy Vera - 2022</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

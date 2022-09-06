@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2? family=Poppins:ital,wght@0,200;1,100&display=swap');
+
+
+*{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(#F3A6EE, #305f99);
+}
+
+.logo{
+    padding: 20px;
+    background: #16539e;   
+}
+
+.container{
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+}   
+    
+
+main{
+    display: flex;
+}
+
+.input-texto{
+    margin-top: 90px;
+    border: none;
+    background: #fff;
+    font-size: 20px;
+    width: 612px;
+    height: 469px;
+    border: none;
+
+}
+
+.info img{
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    font-size: 15px; 
+}
+
+span{
+    font-size: 12px;
+}
+
+.mensaje {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 90px;
+    background-image: url("imagenes/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 300px;
+    border: none; 
+}
+
+.mensaje-box{
+    background: #fff;
+    right: 20px;
+    padding: 40px 10px;
+    margin-left: 200px;
+    height: 580px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+#contenedor{
+    padding: 20px 10px;
+    font-size: 16px;
+}
+
+h4{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.copiar{
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: auto;
+    background: #0f3e78;
+    color: #fff;
+}
+
+button{
+    border-width : 1.5px;
+    border: none;
+    border-radius: 18px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    padding: 10px 50px;
+    cursor: pointer;
+    
+}
+
+.botones{
+    width: 10%;;
+    display: inline;
+    margin-top: 20px;
+    border: 1px;
+}
+
+.encriptar{
+    background-color:#0f3e78;
+    color: #fff;
+}
+
+.desencriptar{
+    margin-left: 30px;
+}  
+
+footer{
+    text-align: center;
+    padding: 40px;
+    background: #16539e;
+    color: #fff; 
+    letter-spacing: 3px;
+    font-size: 12px;
+    position: static;
+}
+
+@media screen and (max-width: 768px){
+    
+    .container{
+        width: auto;
+        display: block;
+        margin-right: 10px;
+        margin-left: 10px;
+    }  
+
+    .input-texto{
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .input-texto{
+        margin-bottom: 50px;
+        margin-right: 0;
+        
+    }
+    .mensaje-box{
+        width: 100%;
+        text-align: center;
+        margin: 50px auto;
+
+    }
+
+    .mensaje{
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    
+    }
+    
+    .encriptar{
+        text-align: center;
+        width: 100%;
+    }
+
+    .desencriptar{
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .copiar{
+        width: 90%;
+        text-align: center;
+        margin: 0;
+    }
+}
