@@ -5,48 +5,61 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
+    box-sizing: border-box;
 }
 
 body{
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(#58E5D8, #305f99);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .logo{
+    background:#305f99;
+    margin: 0;
+    height: 100px;
     padding: 20px;
-    background: #16539e; 
-    width: 100%;  
+    height: 100%; 
+
 }
 
 .container{
-    max-width: 940px;
+    display: flex;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
+    min-height: 100vh; 
+    justify-content: space-between;
 
 }
 
 main{
-    display: flex;
     margin-left: 80px;
-    margin-bottom: 50px;
 }
 
 .input-texto{
-    width: 431px;
-    height: 419px;
-    margin-top: 90px;
+    width: auto;
+    height: 455px;
+    margin-top: 50px;
     border: none;
     background: #fff;
     font-size: 20px;
     border: none;
+    border-radius: 20px;
 
+}
+
+.info{
+    margin-left: 15px;
 }
 
 .info img{
     width: 10px;
     height: 10px;
     margin-right: 3px;
-    font-size: 15px; 
+    font-size: 16px; 
 }
 
 span{
@@ -62,6 +75,7 @@ span{
     background-size: 300px;
     border: none; 
     text-align: center;
+    border-radius: 20px;
 }
 
 .mensaje-box{
@@ -69,6 +83,7 @@ span{
     height: 600px;
     margin: 50px;
     text-align: center;
+    border-radius: 20px;
 }
 
 h4{
@@ -90,8 +105,8 @@ h4{
 
 button:hover{
     background: #58E5D8;
-    transform: scale(1.2);
-    transition: 2s all;
+    transform: scale(1.1);
+    transition: 1.5s all;
 }
 
 button{
@@ -127,42 +142,34 @@ button{
     width: 100%;
     text-align: center;
     padding: 40px;
-    background: #16539e;
+    background: #305f99;
     color: #fff; 
     letter-spacing: 3px;
-    font-size: 12p;
-}
+    font-size: 12px;
+}   
 
-@media screen and (max-width: 768px){
-    .logo{
-        width: 100%;
-        margin: auto;
-    }
+@media screen and (max-width:480px){
     
     .container{
+        justify-content: space-between;
         width: 100%;
         display: block;
         padding: 0;
-        margin: auto 5px;
+        margin: auto;
     }  
 
     .input-texto{
-        width: 100%;
-        height: 415px;
+        width: 95%;
+        height: 300px;
         text-align: center;
 
     }
 
-    .input-texto{
-        margin-bottom: 50px;
-        margin-right: 0;
+    .input-texto, .mensaje-box{
+        margin-bottom: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
         
-    }
-    .mensaje-box{
-        width: 100%;
-        text-align: center;
-        margin: 50px auto;
-
     }
 
     .mensaje{
@@ -170,15 +177,18 @@ button{
         padding: 0;
         text-align: center;
         margin: 0 auto;
-        background-size: 250px;
-    
     }
 
     .info{
         margin-left: 10px;
     }
+
+    button:hover{
+        transform: scale(1.0);
+    }
+
     .botones{
-        width: 95%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -195,14 +205,9 @@ button{
     }
 
     .copiar{
-        width: 90%;
+        width: 80%;
         text-align: center;
         margin: auto;
     }
 
-    .copyright{
-        width: 100%;
-        text-align: center;
-        padding: 25px;
-    }
 }
